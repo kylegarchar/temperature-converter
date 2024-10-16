@@ -22,4 +22,6 @@ function describeTemperature(feelsLike) {
     };
 };
 
-alert(`You entered ${fahrenheitTemp} which converts to ${celsiusTemp} which feels ${feelsLike} --${randomInt} is a random number between 0 and ${fahrenheitTemp}`);
+alert(`You entered ${fahrenheitTemp} which converts to ${celsiusTemp} which feels ${feelsLike}
+  
+${randomInt} is a random number between 0 and ${fahrenheitTemp}`);

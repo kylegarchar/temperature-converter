@@ -1,9 +1,9 @@
 const fahrenheitTemp = prompt(`Enter a Temperature in Fahrenheit for us to convert to Celcius`);
 const feelsLike = describeTemperature(fahrenheitTemp);
 const celsiusTemp = convertToCelsius(fahrenheitTemp);
-const randomInt = getRandomInt(fahrenheitTemp)
+const randomInt = getRandomInt(fahrenheitTemp);
 function getRandomInt (randomInt) {
-return rand(0, fahrenheitTemp)
+return Math.round(Math.random()*fahrenheitTemp)
 };
 function convertToCelsius(celsiusTemp){
   return (fahrenheitTemp-32)*(5/9)
@@ -22,4 +22,4 @@ function describeTemperature(feelsLike) {
     };
 };
 
-alert(`You entered ${fahrenheitTemp} which converts to ${celsiusTemp} which feels ${feelsLike} -- ${randomInt} is a temp between 0 and ${fahrenheitTemp}`);
+alert(`You entered ${fahrenheitTemp} which converts to ${celsiusTemp} which feels ${feelsLike} --${randomInt} is a random number between 0 and ${fahrenheitTemp}`);
